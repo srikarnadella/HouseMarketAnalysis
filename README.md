@@ -42,12 +42,20 @@ The script loads the combined data, predictions, and feature importances from th
 #### Prediction Visualization:
 
 * A scatter plot is created to visualize the accuracy of the model's predictions over time.
+![Alt Text](Figure_1.png)
 * Time Series Plots: Multiple subplots visualize the trends over time for interest rates, vacancy rates, CPI, adjusted prices, and adjusted values.
+![Alt Text](Figure_3.png)
 * Correlation Heatmap: A heatmap is generated to show the correlation between different features in the dataset.
+![Alt Text](Figure_4.png)
 * Distribution Plots: Histograms with KDE (Kernel Density Estimate) are plotted for each feature to show their distributions.
+![Alt Text](Figure_5.png)
 * Trend Analysis: A plot showing trends in adjusted prices and values over time is created.
+![Alt Text](Figure_6.png)
 * Future Predictions: The script trains a RandomForest model for future predictions and generates future data. Predictions for future adjusted prices are made and plotted alongside historical data.
+![Alt Text](Figure_8.png)
 * Feature Importance Plot: A horizontal bar plot displays the importance of each feature as determined by the RandomForest model.
+![Alt Text](FeatureImportance.png)
+
 
 #### Summary of Findings
 ##### Model Performance:
