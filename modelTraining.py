@@ -9,11 +9,11 @@ from sklearn.model_selection import GridSearchCV
 import pickle
 
 # Load and preprocess data
-fedfiles = ["MORTGAGE30US.csv", "RRVRUSQ156N.csv", "CPIAUCSL.csv"]
+fedfiles = ["data/MORTGAGE30US.csv", "data/RRVRUSQ156N.csv", "data/CPIAUCSL.csv"]
 dfs = [pd.read_csv(f, parse_dates=True, index_col=0) for f in fedfiles]
 fedData = pd.concat(dfs, axis=1).ffill().dropna()
 
-zillowFiles = ["Metro_median_sale_price_uc_sfrcondo_week.csv", "Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv"]
+zillowFiles = ["data/Metro_median_sale_price_uc_sfrcondo_week.csv", "data/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv"]
 dfs = [pd.read_csv(f) for f in zillowFiles]
 dfs = [pd.DataFrame(df.iloc[0, 5:]) for df in dfs]
 
